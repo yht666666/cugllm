@@ -154,4 +154,4 @@ A_i = (R_MCR(o_i) - mean(R_MCR)) / (std(R_MCR) + 1e-8)
 
 ## 5. 一句话总结
 
-这篇 ACL 2026 论文的核心观点是：医学 VQA 的强化学习不能只奖励“最后答对了没有”，还要奖励“是否真的使用了图像”和“推理是否能推出答案”。作者用 Med-Zero-17K 扩大模态覆盖，用 RPCR 约束视觉 grounding，用 RCDR 约束 reasoning-answer entailment，再用 RDAR 保留答案正确性，最终组成 MCR-GRPO。
+将单一答案奖励扩展为“答案正确、推理与答案一致、视觉与推理一致”三个奖励。
